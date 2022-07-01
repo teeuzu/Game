@@ -1,5 +1,5 @@
 from random import randint
-
+ 
 class Calcular:
 
     def __init__(self: object, dificuldade: int, /) -> None:
