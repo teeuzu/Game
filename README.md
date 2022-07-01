@@ -9,7 +9,7 @@ e representa, de forma aleatória, um cálculo para que possamos informar o resu
 1. Soma
 2. Subtração
 3. Multiplicação
-4. Divisão
+4. Divisão 
 
 
 Se o usuário acertar a resposta, somará um ponto ao seu score.
