@@ -1,4 +1,4 @@
-# Importando a classe Calcular do arquivo calcular.py
+# Importando a classe Calcular do arquivo calcular.py 
 from models.calcular import Calcular
 
 def main() -> None:
