@@ -1,3 +1,4 @@
+# Importando a classe Calcular do arquivo calcular.py
 from models.calcular import Calcular
 
 def main() -> None:
@@ -15,10 +16,11 @@ def jogar(pontos: int) -> None:
 
     resultado: int = int(input())
 
+    #Checando se o resultado esperado está correto ou não
     if calc.checar_resultado(resultado):
         pontos += 1
         print(f'Você tem {pontos} pontos(s).\n')
-
+    
     continuar: int = int(input('Deseja continuar no jogo? [1 - sim, 0 - não]: '))
 
     if continuar:
@@ -29,6 +31,6 @@ def jogar(pontos: int) -> None:
 
 
 
-
+# Executando o projeto 
 if __name__ == '__main__':
     main()

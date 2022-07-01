@@ -9,7 +9,7 @@ class Calcular:
         self.__operacao: int = randint(1, 3) # = Somar, 2 = diminuir, 3 = multiplicar
         self.__resultado: int = self._gerar_resultado
 
-
+# 1 - Definindo as propriedades para cada atributo privado
     @property
     def dificuldade(self: object) -> int:
         return self.__dificuldade
@@ -30,6 +30,7 @@ class Calcular:
     def resultado(self: object) -> int:
         return self.__resultado
 
+    # Operação que será apresentada aleatoriamente após selecionar o nível de dificuldade 
     def __str__(self: object) -> str:
         op: str = ''
         if self.operacao == 1:
@@ -42,7 +43,7 @@ class Calcular:
             op = 'Operação Desconhecida'
         return f'Valor 1: {self.valor1} \nValor 2: {self.valor2} \nDificuldade: {self.dificuldade} \nOperacao: {op}'
 
-        
+      # Gerando valor após o nível de dificuldade  
     @property
     def _gerar_valor(self: object) -> int:
         if self.dificuldade == 1:
@@ -63,8 +64,9 @@ class Calcular:
         elif self.operacao == 2: #diminuir
             return self.valor1 - self.valor2
         else:
-            return self.valor1 * self.valor2
+            return self.valor1 * self.valor2 #multiplicar
 
+    #Operação aritmética
     @property
     def _op_simbolo(self: object) -> str:
         if self.operacao == 1:
@@ -77,6 +79,7 @@ class Calcular:
     def checar_resultado(self: object, resposta: int) -> bool:
         certo: bool = False # Só será True se o resultado coincidir com a resposta
         
+        # Verificando se o resultado coincide com a resposta correta ou incorreta
         if self.resultado == resposta:
             print('Resposta correta!')
             certo = True
